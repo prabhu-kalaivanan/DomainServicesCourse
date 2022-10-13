@@ -34,8 +34,8 @@ jobs:
         
       - name: Display Build Version
         run: |
-           echo "Build version: ${{ steps.gitversion.outputs.semVer }}"
-           echo "${{ steps.gitversion.outputs.semVer }}" > ./Source/Frontend/public/version.txt
+          echo "Build version: ${{ steps.gitversion.outputs.semVer }}"
+          echo "${{ steps.gitversion.outputs.semVer }}" > ./Source/Frontend/public/version.txt
 
       - name: Install and Build 🔧
         run: |
